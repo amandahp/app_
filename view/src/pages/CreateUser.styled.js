@@ -22,6 +22,10 @@ export const Container = styled.div`
   @media(min-width: 601px){
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `
 
@@ -40,4 +44,33 @@ export const Box = styled.div`
     overflow-y: auto;
     transition: .2s;
   }
+`
+
+export const BoxTitle = styled.div`
+@media(min-width: 601px){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  p{
+    font-size: 2.3rem;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    letter-spacing: .0107142857em;
+    .blue{
+      color: #4384F3;
+    }
+    .red{
+      color: #EA4435;
+    }
+    .yellow{
+      color: #FABC04;
+    }
+    .green{
+      color: #33A852;
+    }
+  }
+}
 `

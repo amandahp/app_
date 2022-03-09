@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {ButtonStyle, Teste} from './button.styled'
+import {ButtonStyle, Teste, BlockButton } from './button.styled'
 
 export const Button = (props) => {
   const {
@@ -17,3 +17,20 @@ export const Button = (props) => {
     </>
   )
 }
+
+export const ButtonBlock = (props) => {
+  const {
+    value = ""
+  } = props
+
+  return (
+    <>
+    <Teste>
+      <BlockButton disabled>{value}</BlockButton>
+    </Teste>
+      
+    </>
+  )
+}
+
+

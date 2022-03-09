@@ -8,18 +8,21 @@ export const Input = (props) => {
     type = 'text',
     placeholder = 'null',
     inputValue = "",
-    onChange = () => {}
+    onChange = () => {},
+    id = "",
   } = props
 
   return (
     <S.BoxInput>
       <S.Label>
-        {label}
+        &nbsp;&nbsp;{label}
         <br />
         <S.Input placeholder={placeholder}
         type={type}
         value={inputValue}
-        onChange={onChange} 
+        onChange={onChange}
+        id={id} 
+        required
         />
       </S.Label>
     </S.BoxInput>
